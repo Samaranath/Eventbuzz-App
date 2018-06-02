@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sravyanaguboyina.eventbuzz.student_choose">
+
+    <Button
+        android:id="@+id/stu_conduct"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREATE AN EVENT"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="158dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/stu_view"
+        android:layout_alignStart="@+id/stu_view"
+        android:layout_marginTop="74dp" />
+
+    <Button
+        android:id="@+id/stu_view"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text=" STUDENT EVENTS"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="307dp" />
+
+    <Button
+        android:id="@+id/staff_view"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STAFF EVENTS"
+        android:layout_marginBottom="28dp"
+        android:layout_above="@+id/stu_view"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/logout"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stu_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:text="LOGOUT" />
+</RelativeLayout>

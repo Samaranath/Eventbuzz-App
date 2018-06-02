@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sravyanaguboyina.eventbuzz.student_conduct">
+
+    <TextView
+        android:id="@+id/stename"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="Name"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="51dp"
+        android:layout_above="@+id/descrtxt"
+        android:layout_alignLeft="@+id/descp"
+        android:layout_alignStart="@+id/descp"
+        android:layout_marginBottom="14dp" />
+
+
+    <TextView
+        android:id="@+id/descp"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="Description"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="116dp"
+        android:layout_marginBottom="38dp"
+        android:layout_above="@+id/sdatetxt2"
+        android:layout_alignLeft="@+id/startdate3"
+        android:layout_alignStart="@+id/startdate3" />
+
+    <EditText
+        android:id="@+id/descrtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="116dp"
+        android:layout_alignBaseline="@+id/descp"
+        android:layout_alignBottom="@+id/descp"
+        android:layout_alignLeft="@+id/sdatetxt2"
+        android:layout_alignStart="@+id/sdatetxt2" />
+
+    <TextView
+        android:id="@+id/startdate3"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/stimetxt2"
+        android:layout_alignLeft="@+id/starttime3"
+        android:layout_alignStart="@+id/starttime3"
+        android:layout_marginBottom="16dp"
+        android:text="Start Date"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="196dp" />
+
+    <EditText
+        android:id="@+id/sdatetxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="196dp"
+        android:layout_alignBaseline="@+id/startdate3"
+        android:layout_alignBottom="@+id/startdate3"
+        android:layout_alignLeft="@+id/stimetxt2"
+        android:layout_alignStart="@+id/stimetxt2"
+        android:layout_alignRight="@+id/stimetxt2"
+        android:layout_alignEnd="@+id/stimetxt2" />
+
+    <TextView
+        android:id="@+id/starttime3"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:text="Start Time"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="276dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/stimetxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="276dp"
+        android:layout_alignBottom="@+id/starttime3"
+        android:layout_alignLeft="@+id/sconduct2"
+        android:layout_alignStart="@+id/sconduct2"
+        android:layout_alignRight="@+id/sconduct2"
+        android:layout_alignEnd="@+id/sconduct2" />
+
+    <Button
+        android:id="@+id/sconduct2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        android:text="CONDUCT"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="380dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/enddate3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Date"
+        android:layout_alignBottom="@+id/enddtxt"
+        android:layout_alignLeft="@+id/starttime3"
+        android:layout_alignStart="@+id/starttime3" />
+
+    <TextView
+        android:id="@+id/etime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Time"
+        android:layout_alignBottom="@+id/etimetxt"
+        android:layout_alignLeft="@+id/enddate3"
+        android:layout_alignStart="@+id/enddate3" />
+
+    <EditText
+        android:id="@+id/nametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignBaseline="@+id/stename"
+        android:layout_alignBottom="@+id/stename"
+        android:layout_alignLeft="@+id/descrtxt"
+        android:layout_alignStart="@+id/descrtxt" />
+
+    <Button
+        android:id="@+id/sdate2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/descrtxt"
+        android:layout_alignRight="@+id/descrtxt"
+        android:layout_alignTop="@+id/sdatetxt2"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:text="date" />
+
+    <Button
+        android:id="@+id/stime2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sdate2"
+        android:layout_alignStart="@+id/sdate2"
+        android:layout_alignTop="@+id/stimetxt2"
+        android:text="time" />
+
+    <EditText
+        android:id="@+id/enddtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stime2"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignRight="@+id/stimetxt2"
+        android:layout_alignEnd="@+id/stimetxt2"
+        android:layout_alignLeft="@+id/stimetxt2"
+        android:layout_alignStart="@+id/stimetxt2" />
+
+    <Button
+        android:id="@+id/edate2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stime2"
+        android:layout_alignStart="@+id/stime2"
+        android:layout_below="@+id/stime2"
+        android:text="DATE" />
+
+    <EditText
+        android:id="@+id/etimetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/edate2"
+        android:layout_alignLeft="@+id/enddtxt"
+        android:layout_alignStart="@+id/enddtxt"
+        android:layout_alignRight="@+id/enddtxt"
+        android:layout_alignEnd="@+id/enddtxt" />
+
+    <Button
+        android:id="@+id/etime2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etimetxt"
+        android:layout_alignBottom="@+id/etimetxt"
+        android:layout_alignLeft="@+id/edate2"
+        android:layout_alignStart="@+id/edate2"
+        android:text="TIME" />
+
+    <Button
+        android:id="@+id/buttonChoose"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sconduct2"
+        android:layout_alignLeft="@+id/etime1"
+        android:layout_alignStart="@+id/etime1"
+        android:layout_marginBottom="11dp"
+        android:text="Select" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonChoose"
+        android:layout_alignEnd="@+id/sconduct2"
+        android:layout_alignRight="@+id/sconduct2"
+        android:layout_toRightOf="@+id/starttime3"
+        android:ems="10"
+        android:hint="NameForImage"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/buttonUpload"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextName"
+        android:layout_alignLeft="@+id/etime2"
+        android:layout_alignStart="@+id/etime2"
+        android:layout_alignTop="@+id/editTextName"
+        android:text="Upload" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/venue"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="Venue"
+        android:layout_above="@+id/sdatetxt2"
+        android:layout_alignLeft="@+id/descp"
+        android:layout_alignStart="@+id/descp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sdatetxt2"
+        android:layout_alignLeft="@+id/descrtxt"
+        android:layout_alignStart="@+id/descrtxt"
+        android:ems="10"
+        android:inputType="textPersonName" />
+</RelativeLayout>

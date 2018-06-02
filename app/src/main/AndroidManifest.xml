@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sravyanaguboyina.eventbuzz">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".signup">
+            <intent-filter>
+                <action android:name="com.example.sravyanaguboyina.eventbuzz.signup" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".emp_signup">
+            <intent-filter>
+                <action android:name="com.example.sravyanaguboyina.eventbuzz.emp_signup" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".select">
+            <intent-filter>
+                <action android:name="com.example.sravyanaguboyina.eventbuzz.select" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".staffpage">
+            <intent-filter>
+                <action android:name="com.example.sravyanaguboyina.eventbuzz.staffpage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".staff_conduct">
+            <intent-filter>
+                <action android:name="com.example.sravyanaguboyina.eventbuzz.staff_conduct" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".student_conduct">
+            <intent-filter>
+                <action android:name="com.example.sravyanaguboyina.eventbuzz.student_conduct" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".student_choose">
+            <intent-filter>
+                <action android:name="com.example.sravyanaguboyina.eventbuzz.student_choose" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".student_view">
+            <intent-filter>
+                <action android:name="com.example.sravyanaguboyina.eventbuzz.student_view" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".staffview">
+            <intent-filter>
+                <action android:name="com.example.sravyanaguboyina.eventbuzz.staffview" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

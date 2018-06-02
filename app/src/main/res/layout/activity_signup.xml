@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sravyanaguboyina.eventbuzz.signup">
+
+        <TextView
+            android:id="@+id/staff1"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="42dp"
+            android:text="Username"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="51dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/descp2"
+            android:layout_alignStart="@+id/descp2" />
+
+        <EditText
+            android:id="@+id/usertxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Reg.No"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteX="127dp"
+            tools:layout_editor_absoluteY="51dp"
+            android:layout_alignBaseline="@+id/staff1"
+            android:layout_alignBottom="@+id/staff1"
+            android:layout_alignLeft="@+id/descrtxt2"
+            android:layout_alignStart="@+id/descrtxt2" />
+
+        <TextView
+            android:id="@+id/descp2"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:text="Password"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="116dp"
+            android:layout_alignBaseline="@+id/descrtxt2"
+            android:layout_alignBottom="@+id/descrtxt2"
+            android:layout_alignLeft="@+id/startdate1"
+            android:layout_alignStart="@+id/startdate1" />
+
+        <EditText
+            android:id="@+id/descrtxt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="127dp"
+            tools:layout_editor_absoluteY="116dp"
+            android:layout_below="@+id/staff1"
+            android:layout_alignLeft="@+id/sdatetxt1"
+            android:layout_alignStart="@+id/sdatetxt1" />
+
+        <TextView
+            android:id="@+id/startdate1"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:text="EMail"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="196dp"
+            android:layout_alignBaseline="@+id/sdatetxt1"
+            android:layout_alignBottom="@+id/sdatetxt1"
+            android:layout_alignLeft="@+id/starttime1"
+            android:layout_alignStart="@+id/starttime1" />
+
+        <EditText
+            android:id="@+id/sdatetxt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="127dp"
+            tools:layout_editor_absoluteY="196dp"
+            android:layout_below="@+id/descp2"
+            android:layout_alignLeft="@+id/stimetxt1"
+            android:layout_alignStart="@+id/stimetxt1" />
+
+        <TextView
+            android:id="@+id/starttime1"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:text="PhoneNumber"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="276dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_alignBaseline="@+id/stimetxt1"
+            android:layout_alignBottom="@+id/stimetxt1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/stimetxt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            tools:layout_editor_absoluteX="127dp"
+            tools:layout_editor_absoluteY="276dp"
+            android:layout_below="@+id/startdate1"
+            android:layout_alignLeft="@+id/sconduct1"
+            android:layout_alignStart="@+id/sconduct1" />
+
+        <Button
+            android:id="@+id/sconduct1"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            tools:layout_editor_absoluteX="147dp"
+            tools:layout_editor_absoluteY="380dp"
+            android:layout_marginBottom="110dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/starttime1"
+            android:layout_toEndOf="@+id/starttime1"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp" />
+        <TextView
+            android:id="@+id/enddate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semester"
+            android:layout_alignLeft="@+id/starttime1"
+            android:layout_alignStart="@+id/starttime1"
+            android:layout_alignTop="@+id/semm" />
+
+        <Spinner
+            android:id="@+id/semm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/starttime1"
+            android:layout_marginTop="26dp"
+            android:layout_alignLeft="@+id/stimetxt1"
+            android:layout_alignStart="@+id/stimetxt1" />
+
+        <TextView
+            android:id="@+id/ttiimmee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/enddate1"
+            android:layout_alignStart="@+id/enddate1"
+            android:layout_below="@+id/semm"
+            android:layout_marginTop="33dp"
+            android:text="Branch" />
+
+        <Spinner
+            android:id="@+id/dpt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ttiimmee"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/semm"
+            android:layout_alignStart="@+id/semm" />
+
+</RelativeLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sravyanaguboyina.eventbuzz.staff_conduct">
+
+    <TextView
+        android:id="@+id/empid1"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="Emp ID"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="51dp"
+        android:layout_alignBaseline="@+id/nametxt1"
+        android:layout_alignBottom="@+id/nametxt1"
+        android:layout_alignLeft="@+id/descp3"
+        android:layout_alignStart="@+id/descp3" />
+
+
+    <TextView
+        android:id="@+id/descp3"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="Description"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="116dp"
+        android:layout_above="@+id/sdatetxt3"
+        android:layout_alignLeft="@+id/startdate2"
+        android:layout_alignStart="@+id/startdate2" />
+
+    <EditText
+        android:id="@+id/descrtxt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="116dp"
+        android:layout_alignBaseline="@+id/descp3"
+        android:layout_alignBottom="@+id/descp3"
+        android:layout_alignLeft="@+id/sdatetxt3"
+        android:layout_alignStart="@+id/sdatetxt3" />
+
+    <TextView
+        android:id="@+id/startdate2"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="Date"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="196dp"
+        android:layout_above="@+id/stimetxt3"
+        android:layout_alignLeft="@+id/starttime2"
+        android:layout_alignStart="@+id/starttime2"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/sdatetxt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="196dp"
+        android:layout_alignBaseline="@+id/startdate2"
+        android:layout_alignBottom="@+id/startdate2"
+        android:layout_alignLeft="@+id/stimetxt3"
+        android:layout_alignStart="@+id/stimetxt3"
+        android:layout_alignRight="@+id/stimetxt3"
+        android:layout_alignEnd="@+id/stimetxt3" />
+
+    <TextView
+        android:id="@+id/starttime2"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:text="Time"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="276dp"
+        android:layout_above="@+id/enddate2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="21dp" />
+
+    <EditText
+        android:id="@+id/stimetxt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="276dp"
+        android:layout_alignBottom="@+id/starttime2"
+        android:layout_alignLeft="@+id/sconduct3"
+        android:layout_alignStart="@+id/sconduct3"
+        android:layout_alignRight="@+id/sconduct3"
+        android:layout_alignEnd="@+id/sconduct3" />
+
+    <Button
+        android:id="@+id/sconduct3"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="94dp"
+        android:text="CONDUCT"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="380dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/enddate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Semester"
+        android:layout_above="@+id/brancc"
+        android:layout_alignLeft="@+id/starttime2"
+        android:layout_alignStart="@+id/starttime2"
+        android:layout_marginBottom="14dp" />
+
+    <Spinner
+        android:id="@+id/semm1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/enddate2"
+        android:layout_alignLeft="@+id/stimetxt3"
+        android:layout_alignStart="@+id/stimetxt3"
+        android:layout_alignRight="@+id/stimetxt3"
+        android:layout_alignEnd="@+id/stimetxt3" />
+
+    <TextView
+        android:id="@+id/brancc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Branch"
+        android:layout_above="@+id/sconduct3"
+        android:layout_alignLeft="@+id/enddate2"
+        android:layout_alignStart="@+id/enddate2"
+        android:layout_marginBottom="45dp" />
+
+    <Spinner
+        android:id="@+id/dpt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/brancc"
+        android:layout_alignLeft="@+id/semm1"
+        android:layout_alignStart="@+id/semm1"
+        android:layout_alignRight="@+id/semm1"
+        android:layout_alignEnd="@+id/semm1" />
+
+    <EditText
+        android:id="@+id/nametxt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/descrtxt3"
+        android:layout_alignLeft="@+id/descrtxt3"
+        android:layout_alignStart="@+id/descrtxt3"
+        android:layout_marginBottom="27dp" />
+
+    <Button
+        android:id="@+id/sdate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/sdatetxt3"
+        android:text="date"
+        android:layout_alignRight="@+id/descrtxt3"
+        android:layout_alignEnd="@+id/descrtxt3" />
+
+    <Button
+        android:id="@+id/stime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sdate1"
+        android:layout_alignStart="@+id/sdate1"
+        android:layout_alignTop="@+id/stimetxt3"
+        android:text="time" />
+
+</RelativeLayout>
